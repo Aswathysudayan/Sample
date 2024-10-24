@@ -1,0 +1,66 @@
+Git and github : version control system
+
+alternatives: AWS, bitbucket, gitlab
+--------------
+
+Git: it is a version control system which track the chnages in the code in our own machine
+Github: it is a remote application used to merge more people into a project using repositories
+        it is hosted in web
+        1. create repository in github
+        2. push clone to get a replica of repository
+        3. push to apply our changes back to github repository
+        4. Git pull to get new changes made by other users
+
+
+git push: upload local content to remte repository(github, gitlab)
+eg: git push origin main
+
+git clone: creates a local copy of a remoer repository. Used to start when you want to work on a project that exists in repository.
+eg: git clone ...
+
+git pull: this fetches changes from repository to local workspace, which updates our local code with the chagnges made by others
+eg: git pull 
+
+
+git bash commands
+------------------
+
+
+1. git config --global user.name "aswathysudayan"
+
+2. git config --global user.email "aswathysudayan@gmail.com"
+
+3. git config --list
+
+4. git add : add the file to staging (file is being tracked by git)
+-------
+Add a specific file:
+git add <file-name>
+Example:
+git add index.html
+Add multiple specific files:
+git add <file1> <file2>
+Example:
+git add index.html style.css
+Add all files in the current directory and its subdirectories:
+git add .
+Add a specific directory:
+git add <directory-name>/
+Example:
+git add src/
+Add all tracked and untracked files (excluding ignored ones):
+git add -A
+Add all changes, but only for files that are already tracked:
+git add -u
+
+
+
+5. git commit :to commit the changes in the tracked file.
+----------
+git commit -m "your commit message"
+
+6. git push origin main
+        pushing the file to the main branch in github repository
+
+
+
